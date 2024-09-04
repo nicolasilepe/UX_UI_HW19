@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background-color: aqua;*/
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(218, 190, 139);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures footer stays at the bottom */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    margin-right: 10px;
+}
+
+.profile-name {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "Paytone One" , Arial;
+    /* Add font family ^ */
+}
+
+nav button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+.intro {
+    display: flex;
+    padding: 30px;
+    background-color: #e0e0e0;
+    margin: 10px;
+    flex-grow: 1; 
+    border: 2px solid black;
+}
+
+.intro-image {
+    width: 200px;
+    height: 200px;
+    background-color: #a9a9a9;
+    margin-right: 20px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.project {
+    display: flex;
+    padding: 30px;
+    background-color: #e0e0e0;
+    margin: 10px;
+    flex-grow: 1; /* Ensures the section takes up available space */
+    border: 2px solid black;
+}
+
+.project-image {
+    width: 150px;
+    height: 150px;
+    background-color: #a9a9a9;
+    margin-right: 20px;
+}
+
+.project-description {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #d3d3d3;
+    width: 100%;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    background-color: #a9a9a9;
+    margin-left: 10px;
+}
+
+.nav-button {
+
+}
+
+/* My UI/UX Skills */
+
+.mySkills {
+    padding: 30px;
+    background-color: #f0f0f0;
+    border: 2px solid black; /* Black border around the entire section */
+    margin: 20px; /* Adjust margin for spacing */
+}
+
+.mySkills h1 {
+    text-align: center; /* Center the title text */
+    margin-bottom: 20px; /* Add some space below the title */
+    font-size: 2em;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-around; /* Evenly distribute the skill boxes */
+}
+
+.skillBox {
+    width: 30%; /* Adjust the width to fit three skill boxes evenly */
+    padding: 20px;
+    border: 2px solid black; /* Black border around each skill box */
+    text-align: center; /* Center the content */
+    background-color: white; /* White background for each skill box */
+}
+
+.skillBox img {
+    width: 100px; /* Adjust size of the image */
+    height: 100px; /* Make the image a square */
+    margin-bottom: 15px;
+}
+
+.skillBox h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-family: "Paytone One", Arial;
+}
+
+.skillBox p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* My Work Section V */
+
+.myWork {
+    padding: 30px;
+    background-color: #f0f0f0;
+    border: 2px solid black; /* Black border around the entire section */
+    margin: 20px;
+}
+
+.myWork h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Paytone One", Arial;
+    font-size: 2em;
+}
+
+.workGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each project row */
+}
+
+.projectRow {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0); /* Magenta border around each project row */
+    background-color: white;
+}
+
+.projectRow img {
+    width: 150px;
+    height: 150px;
+    background-color: #a9a9a9;
+    margin-right: 20px;
+    border: 2px solid lightgray; /* Light gray border around the image */
+}
+
+.workDetails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.workDetails h4 {
+    font-family: "Paytone One", Arial;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.workDetails p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.workDetails button {
+    align-self: start; /* Align button to the start of the text */
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
