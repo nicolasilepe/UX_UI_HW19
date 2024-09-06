@@ -236,3 +236,10 @@ footer {
     border: none;
     cursor: pointer;
 }
+
+.viewAll h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    cursor: pointer;
+}
